@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_20sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:background="#C1C3B5"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:id="@+id/imgAnh"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:src="@drawable/img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:foregroundGravity="center"/>
+
+    <TextView
+        android:id="@+id/tvTenSanPham"
+        app:layout_constraintLeft_toLeftOf="@id/imgAnh"
+        app:layout_constraintRight_toRightOf="@id/imgAnh"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imgAnh"
+        android:text="apple imac 24'' (2021)"
+        android:layout_marginTop="@dimen/_10sdp"/>
+    <TextView
+        android:id="@+id/tvGiaSanPham"
+        app:layout_constraintLeft_toLeftOf="@id/imgAnh"
+        app:layout_constraintRight_toRightOf="@id/imgAnh"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvTenSanPham"
+        android:text="1229 đô"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"/>
+    <TextView
+        android:id="@+id/tvRatingSanPham"
+        app:layout_constraintLeft_toLeftOf="@id/imgAnh"
+        app:layout_constraintRight_toRightOf="@id/imgAnh"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvGiaSanPham"
+        android:text="5 sao"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
